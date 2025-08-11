@@ -1,0 +1,1127 @@
+[
+  {
+    "problem_category": "Enable quiet mode/no-verbose in",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "fix keep adding new",
+    "hint_type": "No solution possible",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "L026: Rule incorrectly flag",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Inconsistent output depending on",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Fatal templating error with",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Whitespace token is_whitespace is",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "--disable_progress_bar Flag Broken for",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Autofix loop limit reached",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "L027: outer-level table not",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No solution possible",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "layout.end-of-file is the only",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "2.0.2 - LT02 issues",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "sqlfluff doesn't recognise a",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Misleading path does not",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Enhance rule L036 to",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "TSQL - L031 incorrectly",
+    "hint_type": "General comment",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Config for fix_even_unparsable not",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Rule L060 could give",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Commented dash character converted",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": "?"
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Number of processes configurable",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Validate layout configurations on",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "BigQuery: Accessing `STRUCT` elements",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Extra space when first",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "add ability to render",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Double backticks in Lint",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "L045: Unused CTEs are",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`fix` per file linted",
+    "hint_type": "General comment",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "General comment",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Deduplicate violations in the",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "[EXPERIMENT]: Rethink Matching routines",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Jinja: sqlfluff fails in",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Add \"enable\" and \"disable\"",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Configuration from current working",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Write-output human format does",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Multiple processes not used",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Rule suggestion: `UNION [ALL|DISTINCT]`",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "2.x: Nested(many=True) eats first",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "ISO8601 DateTimes ending with",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "fields.URL should allow relative-only",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`only` argument inconsistent between",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Incorrect Email Validation https://github.com/marshmallow-code/marshmallow/blob/fbe22eb47db5df64b2c4133f9a5cb6c6920e8dd2/src/marshmallow/validate.py#L136-L151",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "ValueError: SingleAxisTracker, Array, and",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Match `pvsystem.i_from_v`, `v_from_i` single",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "deprecate existing code in",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Add Wavelet Variability Model",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Bug within scaling.py wavelet",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "regression: iam.physical returns nan",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`pvsystem.calcparams_cec()` does not propagate",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "irradiance.aoi can return NaN",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "backtracking for rare case",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "ZeroDivisionError when gcr is",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "expand PVSystem repr The",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`spectrum.spectrl2` calculates negative irradiance",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "warnings in test_sdm https://dev.azure.com/solararbiter/pvlib%20python/_build/results?buildId=4054&view=logs&j=fc432b8b-e2e3-594e-d8b1-15597b6c1d62&t=309866e1-2cf4-5f00-3d0a-999fc3a0f279&l=209",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Incorrect AOI from pvlib.tracking.singleaxis",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "singlediode: newton solver fails",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "ValueError: ModelChain.run_from_effective_irradiance([weather]) when only",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "make read_crn accomodate bad",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "IAM that supports AR",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Update CAMS/SoDa URL SoDa",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Improve docstring or behavior",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "ModelChain.prepare_inputs can succeed with",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "make Array play nicely",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "ModelChainResult.cell_temperature is not always",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "SolarAnywhere File -- pvlib.iotools.read_tmy3",
+    "hint_type": "No solution possible",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Add `min_angle` argument to",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "is vf_row_sky correct? https://github.com/pvlib/pvlib-python/blob/7e88d212c786d0ad334dce6fcafaf29339ff60ab/pvlib/bifacial/infinite_sheds.py#L146",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "temperature.fuentes errors when given",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "expose pvlib.temperature.fuentes in PVSystem",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "remove ModelChain.orientation_strategy I don't",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Consider extracting the surface",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Infinite sheds perf improvement:",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Add interp method for",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Apparent numerical instability in",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "PVSystem.temperature_model_parameters requirement The `temperature_model_parameters`",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "CEC 6-parameter coefficient generation",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Corrections to Townsend snow",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "PVSystem with single Array",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Add a model for",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`pvlib.iotools.get_pvgis_hourly`'s `surface_azimuth` parameter doesn't",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "It should be impossible",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "remove **kwargs from PVSystem,",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Altitude lookup table Currently,",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": "?"
+  },
+  {
+    "problem_category": "The Perez diffuse model",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "pvlib.irradiance.reindl() model generates NaNs",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Consider creating a ``UninferableType``",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Infer calls to str.format()",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Deprecation warnings from numpy",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "error during inference of",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No solution possible",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "`.arguments` property ignores keyword-only",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "@property members defined in",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Replace `cachedproperty` with `functools.cached_property`",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Invalid variable lookup when",
+    "hint_type": "No solution possible",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Crash when inferring `str.format`",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Pyreverse regression after #857",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "ImportError: cannot import name",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "astroid has an undeclared",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "astroid 2.9.1 breaks pylint",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "\"TypeError: unsupported format string",
+    "hint_type": "Traceback inconclusive",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Implement new nodes for",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Cannot infer empty functions",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Replace modutils.is_standard_module() logic with",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parsing error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No solution possible",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Confusing behaviour of ParametricEllipsoid",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Clean up and clarify",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Boolean Operation freezes/crashes ###",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Allow passing through cell",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Adding ``CircularArc``s together does",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "``Multiblock``.plot does not work",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Diffuse and Specular setters",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Unexpected threshold behavior ###",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "`bounds` property return type",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "PolyData faces array is",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "Cell wise and dimension",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Strictly enforce keyword arguments",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "circle creates creates one",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Attribute assignment bug",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Rectilinear grid does not",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Add support for missing",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Parameter rename request",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No solution possible",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Add Tag and VR",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "General comment",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Traceback inconclusive",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Minimal reproduction example",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Traceback inconclusive",
+    "is_misleading": 1
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "General comment",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "Patch or PR merged",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "Allow to search a",
+    "hint_type": "Supportive agreement",
+    "is_misleading": 0
+  },
+  {
+    "problem_category": "DICOM file error",
+    "hint_type": "No hints provided",
+    "is_misleading": 0
+  }
+]
