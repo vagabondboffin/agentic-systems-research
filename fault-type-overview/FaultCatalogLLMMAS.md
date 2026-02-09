@@ -11,7 +11,6 @@
   - **A2O**: agent↔orchestrator/workflow/router
   - **INFRA**: runtime/platform/network/resources
   - **OBS**: observability/telemetry pipeline
-  - **MODEL**: model-level internals (weights/activations/hardware faults)
 - **Type**
   - **Semantic** = meaning/decision correctness
   - **Non-semantic** = timing, availability, transport, formatting, metadata, etc.
