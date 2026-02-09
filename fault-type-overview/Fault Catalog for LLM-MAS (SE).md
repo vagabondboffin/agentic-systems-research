@@ -168,19 +168,3 @@
 - **Prompt/model version drift not recorded** (OBS, Non-semantic) [Dong, 2024]  
 
 ---
-
-# 11) Failure Attribution / Counterfactual Fault Seeding (mechanism, but useful for injection design)
-
-*(Not “new fault types”, but critical because they define injectable **where/when**.)*
-- **Decisive-error step targeting: mistake = (agent i, time t)** (A2O, Semantic injection targeting) [S. Zhang, 2025]  
-- **Intervention operator: replace action at step t to test causality** (A2O, Semantic injection operator) [S. Zhang, 2025]  
-
----
-
-# 12) MODEL-level Faults (outside MAS layer, but in literature)
-
-- **Bit-flip faults (memory/register faults during inference)** (MODEL, Non-semantic) [Yu, 2026]  
-- **Weight/activation perturbation during forward pass** (MODEL, Non-semantic) [Yu, 2026]  
-- **GPU/hardware FI (SEU-like failures)** (MODEL, Non-semantic) [Yu, 2026]  
-
----

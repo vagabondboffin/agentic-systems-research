@@ -1,4 +1,4 @@
-*Date:** February 9th, 2025
+**Date:** February 9th, 2025
 **Author:** Zahra
 
 # Literature Review (Fault/Failure Types Mentioned or Injected) 
@@ -9,7 +9,7 @@
 **[Kong, 2025]** introduces an automated pipeline that generates **faulty multi-agent trajectories** by taking successful traces and applying **controlled, context-aware error injections** via an LLM “manipulator,” producing a labeled dataset for error attribution.  
 **Faults injected (MAST-aligned “Functional Mistakes” used as injection prompts):**
 - **FM-1.x Task/Execution Errors**
-  - **FM-1.1 Task specification deviation**
+  - **FM-1.1 Task specification deviation**ƒƒƒƒ
   - **FM-1.2 Role specification deviation**
   - **FM-1.3 Add redundant steps** (looping/repetition)
   - **FM-1.4 Remove conversation history** (amnesia/context wipe)
