@@ -172,7 +172,7 @@
 
 ---
 
-### **Taxonomy of Failure Modes in Agentic AI Systems (Whitepaper)**
+### **Taxonomy of Failure Modes in Agentic AI Systems (Microsoft)**
 **[Bryan, n.d.]** provides an industry-oriented taxonomy of how agentic systems fail, intended as a practical reference for engineering teams.  
 **Failure/fault types (high-level categories; useful injection inspiration):**
 - Planning/control failures (goal drift, looping, dead-ends)
