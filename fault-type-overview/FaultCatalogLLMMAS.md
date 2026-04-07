@@ -1,170 +1,139 @@
-**Date:** February 9th, 2025
-**Author:** Zahra
-
----
+# Fault/Failure taxonomy for LLM-MAS
 
 ## Legend
-- **Surface**
-  - **A2A**: agent↔agent
-  - **A2T**: agent↔tool/API/env
-  - **A2M**: agent↔memory/context/KB
-  - **A2O**: agent↔orchestrator/workflow/router
-  - **INFRA**: runtime/platform/network/resources
-  - **OBS**: observability/telemetry pipeline
-  - **MODEL**: model-level internals (weights/activations/hardware faults)
-- **Type**
-  - **Semantic** = meaning/decision correctness
-  - **Non-semantic** = timing, availability, transport, formatting, metadata, etc.
+- **Surface (primary)**:
+  - `A2A` agent↔agent
+  - `A2T` agent↔tool/KB/API
+  - `WF` workflow/orchestrator (plans, routing, role logic)
+  - `PLAT` platform/runtime/infra (env, deps, filesystem, network)
+  - `DATA` data/KB + structured I/O contracts (schemas, parsing, encoding)
+  - `MODEL` model/API layer (provider, auth, rate limits, capability)
+- **Semantics**:
+  - `Semantic` = meaning/intent/logic is corrupted
+  - `Non-semantic` = timing/availability/format/transport/runtime issues
 
 ---
 
-# 1) Instruction / Role / Goal Faults (Semantic)
+## Faults
 
-- **Disobey task specification** (A2O, Semantic) [Cemri, 2025; Kong, 2025]  
-- **Disobey role specification** (A2O, Semantic) [Cemri, 2025; Kong, 2025]  
-- **Instruction non-compliance** (A2O, Semantic) [Deshpande, 2025]  
-- **Misinterpretation of instructions** (A2O, Semantic) [Bryan, 2025]  
-- **Incorrect problem identification (wrong task understanding)** (A2O, Semantic) [Deshpande, 2025; Bryan, 2025]  
-- **Goal deviation / goal drift** (A2O, Semantic) [Deshpande, 2025; Dong, 2024]  
-- **Poor prompt design** (A2O, Semantic) [Ma, 2025; Dong, 2024]  
-- **Prompt drift/regression over lifecycle** (A2O, Semantic-over-time) [Dong, 2024]  
+### A2A — Semantic
+- Communication instruction loss (CIL) {Jia,2026}
+- Hallucinated message content / fabricated claims {Jia,2026}
+- Blind trust in upstream messages (no cross-checking) {Jia,2026}
 
----
-
-# 2) Inter-Agent Coordination / Communication Faults
-
-## 2.1 Semantic coordination faults
-- **Fail to ask for clarification** (A2A, Semantic) [Cemri, 2025]  
-- **Task derailment** (A2A/A2O, Semantic) [Cemri, 2025]  
-- **Information withholding** (A2A, Semantic) [Cemri, 2025]  
-- **Ignored other agent’s input** (A2A, Semantic) [Cemri, 2025]  
-- **Reasoning–action mismatch** (A2A/A2T, Semantic) [Cemri, 2025]  
-- **Improper task decomposition** (A2O/A2A, Semantic) [Ma, 2025]  
-- **Faulty conditional judgment / wrong branch** (A2O, Semantic) [Ma, 2025]  
-
-## 2.2 Non-semantic coordination faults
-- **Conversation reset** (A2M/A2O, Non-semantic) [Cemri, 2025]  
-- **Step repetition / redundant steps** (A2O, Non-semantic control-flow) [Cemri, 2025; Kong, 2025]  
-- **Workflow loops and deadlocks** (A2O, Non-semantic) [Ma, 2025; Bryan, 2025]  
-- **Unreasonable node dependency** (A2O, Non-semantic) [Ma, 2025]  
-- **Cross-agent tool/interface mismatch** (A2A/A2T, Non-semantic) [Ma, 2025]  
-- **Task orchestration errors** (A2O, Semantic or Non-semantic) [Deshpande, 2025; Ma, 2025]  
+### A2A — Non-semantic
+- Message delay / jitter {Jia,2026}
+- Message drop/loss {Jia,2026}
+- Message duplication (no dedup) {Jia,2026}
+- Message cycles / replay storms {Jia,2026}
+- Broadcast amplification / misrouting to unintended agents {Jia,2026}
 
 ---
 
-# 3) Memory / Context / Knowledge Base Faults
+### WF — Semantic
+- Inexecutable plan / invalid decomposition {Cemri,2025}
+- Instruction logic conflict / inconsistent constraints {Jia,2026}
+- Instruction ambiguity (under-specified task) {Jia,2026}
+- Role ambiguity / role confusion {Cemri,2025}
+- Prompt formatting / specification error (poor structure cues) {Shah,2026}
+- Prompt variable binding / orchestration error (missing variables, wrong structured input like string vs JSON) {Islam,2026}
 
-## 3.1 Non-semantic state faults
-- **Loss of conversation history / truncation** (A2M, Non-semantic) [Cemri, 2025]  
-- **Context handling failures (window overflow, state tracking errors)** (A2M, Non-semantic) [Deshpande, 2025]  
-- **Context conflict (contradictory intermediate states passed downstream)** (A2M/A2O, Semantic outcome) [Ma, 2025]  
-- **Context staleness / outdated memory used** (A2M, Non-semantic) [Li, 2024; Bryan, 2025]  
-- **Memory capacity exhaustion / poor eviction strategy** (A2M, Non-semantic) [Li, 2024]  
-- **Memory modification mistakes (merge/overwrite wrong info)** (A2M, Semantic) [Li, 2024]  
-- **Loss of data provenance / cannot trace source behind actions** (A2M/OBS, Non-semantic → high risk) [Bryan, 2025]  
-
-## 3.2 Adversarial memory faults
-- **Memory poisoning** (A2M, Semantic security) [Solomon, 2025; Bryan, 2025]  
-- **Targeted KB/RAG poisoning** (A2M, Semantic security) [Bryan, 2025; Li, 2024]  
-- **Memory theft / exfiltration of stored sensitive data** (A2M, Non-semantic security) [Bryan, 2025]  
+### WF — Non-semantic
+- Agent termination failure {Shah,2026}
+- Agent execution failure (crash/halt at runtime) {Shah,2026}
 
 ---
 
-# 4) Reasoning / Decision Faults (Semantic)
+### A2T — Semantic
+- Tool selection error (wrong tool chosen) {Shah,2026}
 
-- **Hallucinations (language-only)** (MODEL/A2O, Semantic) [Deshpande, 2025; Li, 2024; Owotogbe, 2025]  
-- **Tool-related hallucinations (fabricated tool outputs/capabilities)** (A2T, Semantic) [Deshpande, 2025]  
-- **Knowledge update failure / stale knowledge** (A2M, Semantic) [Li, 2024]  
-- **Bias amplification / biased output** (MODEL/A2O, Semantic) [Li, 2024; Bryan, 2025]  
-- **Poor information retrieval (irrelevant/overload retrieval)** (A2T, Semantic) [Deshpande, 2025]  
-- **Tool output misinterpretation** (A2T, Semantic) [Deshpande, 2025]  
-- **Tool selection error** (A2T, Semantic) [Deshpande, 2025]  
-- **Tool/action planning error (wrong sequence/order)** (A2O/A2T, Semantic) [Ma, 2025]  
-- **Non-determinism / run-to-run variance** (A2O/INFRA, Non-semantic) [Dong, 2024]  
+### A2T — Non-semantic
+- Tool format error (malformed tool output / contract violation) {Shah,2026}
+- API misuse (wrong API context) {Shah,2026}
+- API parameter mismatch (wrong/missing args) {Shah,2026}
+- API misconfiguration {Shah,2026}
 
 ---
 
-# 5) Output / Format / Encoding Faults
+### MODEL — Semantic
+- Poor prompt framing error (elicits structurally/semantically wrong outputs) {Shah,2026}
+- Model capability mismatch (task requires capabilities the chosen model doesn’t support) {Islam,2026}
 
-- **Response formatting error (invalid JSON/schema)** (A2A/A2T, Non-semantic) [Ma, 2025; Deshpande, 2025]  
-- **Language/encoding issue (symbols/encoding break parsers)** (A2A/A2T, Non-semantic) [Ma, 2025]  
-- **Formatting errors as tool-call failures** (A2T, Non-semantic) [Deshpande, 2025]  
-
----
-
-# 6) Termination & Verification Faults
-
-- **Unaware of termination conditions** (A2O, Non-semantic control-flow) [Cemri, 2025]  
-- **Premature termination** (A2O, Non-semantic control-flow) [Cemri, 2025]  
-- **No / incomplete verification** (A2O, Semantic) [Cemri, 2025]  
-- **Incorrect verification** (A2O, Semantic) [Cemri, 2025]  
-- **Verification step removed/disabled (attack or config bug)** (A2O, Semantic) [Kong, 2025]  
+### MODEL — Non-semantic
+- Token handling & tracking error {Shah,2026}
+- LLM misconfiguration {Shah,2026}
+- LLM usage / API incompatibility (schema drift, tool-call interface mismatch) {Shah,2026}
+- LLM authentication failure {Shah,2026}
+- Rate limiting / transient LLM API failure {Shah,2026}
+- Model/service unavailable (downtime / feature not released / “model not found”) {Islam,2026}
 
 ---
 
-# 7) Tool / API / Environment Execution Faults (Non-semantic primary)
-
-## 7.1 Agentic tool/API errors (explicit in TRAIL + AgentFail)
-- **Rate limiting (429)** (A2T, Non-semantic) [Deshpande, 2025]  
-- **Authentication errors (401/403)** (A2T, Non-semantic) [Deshpande, 2025]  
-- **Service errors (500)** (A2T, Non-semantic) [Deshpande, 2025]  
-- **Resource not found (404)** (A2T, Non-semantic) [Deshpande, 2025]  
-- **Tool invocation / KB retrieval error** (A2T, Non-semantic) [Ma, 2025]  
-- **Tool definition/contract mismatch** (A2T, Non-semantic) [Deshpande, 2025]  
-- **Environment setup errors (keys, permissions, missing deps)** (A2T/INFRA, Non-semantic) [Deshpande, 2025]  
-
-## 7.2 Resource faults (agentic OS / sandbox / infra)
-- **Resource exhaustion (memory overflow / overload)** (INFRA, Non-semantic) [Deshpande, 2025; Yu, 2025]  
-- **Timeout issues (incl. infinite loops)** (A2T/INFRA, Non-semantic) [Deshpande, 2025]  
+### PLAT — Non-semantic
+- Connection setup failure (infra/client setup) {Shah,2026}
+- Authentication failure (external services) {Shah,2026}
+- Authorization violation {Shah,2026}
+- Resource handling error (files/locks/threads; FS unavailable mid-run) {Shah,2026}
+- Database misconfiguration {Shah,2026}
+- Memory persistence failure {Shah,2026}
+- State load/save failure {Shah,2026}
+- Import/reference resolution failure (deprecated/missing module path) {Islam,2026}
+- Resource exhaustion / quota exhaustion (insufficient RAM/credits) {Islam,2026}
 
 ---
 
-# 8) Platform / Infra Fault Models (Chaos + Microservices + DS)
-
-## 8.1 Chaos experiments in LLM-MAS
-- **Agent failures (agent crash/unavailable)** (INFRA, Non-semantic) [Owotogbe, 2025]  
-- **Agent communication failures** (INFRA/A2A, Non-semantic) [Owotogbe, 2025]  
-- **Communication delays** (INFRA/A2A, Non-semantic) [Owotogbe, 2025]  
-
-## 8.2 Service-level fault injection (Filibuster)
-- **Callsite exceptions (connection error, timeout)** (A2T, Non-semantic) [Meiklejohn, 2021]  
-- **Injected HTTP error responses (e.g., InternalServerError, ServiceUnavailable)** (A2T, Non-semantic) [Meiklejohn, 2021]  
-
-## 8.3 Distributed systems fuzzing model (Mallory)
-- **Network partitions** (INFRA, Non-semantic) [Meng, 2023]  
-- **Node faults (node crash/failure schedules)** (INFRA, Non-semantic) [Meng, 2023]  
-
-## 8.4 Microservice FIT SLR (extra faults beyond classic crash/latency)
-- **Scaling-operation failures (autoscaling side-effects)** (INFRA, Non-semantic) [Yu, 2025]  
-- **Container image corruption** (INFRA, Non-semantic) [Yu, 2025]  
-- **Configuration drift** (INFRA, Non-semantic) [Yu, 2025]  
+### DATA — Non-semantic
+- Type handling error {Shah,2026}
+- Logic/constraint violation in parsing/transforms {Shah,2026}
+- Encoding/decoding error {Shah,2026}
+- Validation omission {Shah,2026}
+- File-type interpretation error {Shah,2026}
+- LLM output parsing/schema mismatch (output format deviates from parser expectations) {Islam,2026}
 
 ---
 
-# 9) Security / Adversarial Faults (Agentic-specific)
+## Failures
 
-- **Direct prompt injection** (A2O, Semantic security) [Solomon, 2025; Bryan, 2025]  
-- **Indirect prompt injection (via web/tool/RAG)** (A2T/A2M, Semantic security) [Solomon, 2025; Bryan, 2025; Li, 2024]  
-- **Agent injection** (A2A/A2O, Semantic security) [Bryan, 2025]  
-- **Agent impersonation** (A2A, Semantic security) [Bryan, 2025]  
-- **Agent flow manipulation (routing/workflow tampering)** (A2O, Non-semantic → semantic harm) [Bryan, 2025]  
-- **Agent provisioning poisoning (poison agent setup/config at birth)** (A2O, Semantic security) [Bryan, 2025]  
-- **Multi-agent jailbreaks** (A2A/A2O, Semantic security) [Bryan, 2025]  
-- **Human-in-the-loop bypass** (A2O/HITL, Semantic security) [Bryan, 2025]  
-- **Function/tool compromise (malicious tool/function)** (A2T, Non-semantic+Semantic) [Bryan, 2025]  
-- **Incorrect permissions / over-permissioning** (INFRA, Non-semantic security) [Bryan, 2025]  
-- **Insufficient isolation (sandbox/tenant boundary issues)** (INFRA, Non-semantic security) [Bryan, 2025]  
-- **Excessive agency (agent can take too-broad actions)** (A2O/INFRA, Semantic governance) [Bryan, 2025]  
-- **Resource exhaustion attacks (DoS via loops/tool abuse)** (INFRA, Non-semantic security) [Bryan, 2025; Solomon, 2025]  
-
----
-
-# 10) Observability / Ops-layer Faults (debuggability faults)
-
-- **Missing trace linkage (broken parent-child, lost IDs)** (OBS, Non-semantic) [Dong, 2024]  
-- **Missing artifact tracking (goals/plans/tools not recorded)** (OBS, Non-semantic) [Dong, 2024]  
-- **Missing provenance / accountability records** (OBS, Non-semantic) [Dong, 2024; Bryan, 2025]  
-- **Monitoring distortion (false latency/cost anomalies)** (OBS, Non-semantic) [Dong, 2024]  
-- **Prompt/model version drift not recorded** (OBS, Non-semantic) [Dong, 2024]  
+### System-level MAS failure modes (MAST)
+- FM-1.1 Disobey task specification {Cemri,2025}
+- FM-1.2 Disobey role specification {Cemri,2025}
+- FM-1.3 Step repetition {Cemri,2025}
+- FM-1.4 Loss of conversation history {Cemri,2025}
+- FM-1.5 Unaware of termination conditions {Cemri,2025}
+- FM-2.1 Conversation reset {Cemri,2025}
+- FM-2.2 Fail to ask for clarification {Cemri,2025}
+- FM-2.3 Task derailment {Cemri,2025}
+- FM-2.4 Information withholding {Cemri,2025}
+- FM-2.5 Ignored other agent’s input {Cemri,2025}
+- FM-2.6 Reasoning–action mismatch {Cemri,2025}
+- FM-3.1 Premature termination {Cemri,2025}
+- FM-3.2 No or incomplete verification {Cemri,2025}
+- FM-3.3 Incorrect verification {Cemri,2025}
 
 ---
+
+### Observable failure symptoms (execution-level)
+- Data & validation errors (schema/type mismatches, malformed outputs) {Shah,2026}
+- Installation & dependency issues {Shah,2026}
+- Execution & runtime failures (exceptions, crashes, hangs) {Shah,2026}
+- Code quality & structure issues {Shah,2026}
+- Agent-specific issues {Shah,2026}
+- Error handling failures (missing/unclear recovery/logging) {Shah,2026}
+- LLM-specific failures {Shah,2026}
+- Connection & network errors {Shah,2026}
+- Tool & function call issues {Shah,2026}
+- File & resource errors {Shah,2026}
+- Synchronization issues {Shah,2026}
+
+#### Additional concrete “effects” (useful as FI outcome labels)
+- Empty response (no output) {Islam,2026}
+- Partial output (truncated/incomplete) {Islam,2026}
+- Incorrect output (complete but wrong) {Islam,2026}
+- Output dump (non-streaming “all at once” output) {Islam,2026}
+- Tool ignored (tools not invoked when needed) {Islam,2026}
+- Stateless interaction (memory not reflected; only current turn handled) {Islam,2026}
+- Slow output {Islam,2026}
+- Warning (non-terminating warning state) {Islam,2026}
+- Indeterminate loop (infinite loop) {Islam,2026}
+- Resource overuse (RAM/compute spike) {Islam,2026}
+- Silent fail (task failed but no explicit indication) {Islam,2026}
